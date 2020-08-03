@@ -1,0 +1,1 @@
+TechCalorie é um projeto em javascript, um contador de calorias pessoal, com local storage e materializeCSS.
