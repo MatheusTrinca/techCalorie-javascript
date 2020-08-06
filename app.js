@@ -96,11 +96,12 @@ const ItemCtrl = (function(){
     getItemById: function(id){
       let found = null;
       data.items.forEach(item => {
-        if(item.id === id){
+        if(item.id == id){
           found = item;
         }
       });
         return found;
+
     },
 
     updateItem: function(name, calories){
@@ -200,7 +201,7 @@ const UICtrl = (function(){
 
       items.forEach(function(item){
         html += `
-          <li class="collection-item" id="${item.id}">
+          <li class="collection-item" id="item-${item.id}">
             <strong>${item.name}:</strong> <em>${item.calories} calorias</em>
             <a href="#" class="secondary-content">
               <i class="edit-item fa fa-pencil"></i>
